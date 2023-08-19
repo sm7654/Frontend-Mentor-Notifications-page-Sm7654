@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/web_image.jpg">
+  
+  <title>Frontend Mentor | Notifications page | Sm7654</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+    <section class="conteiner">
+      <div class="heading">
+        <h1>Chess club</h1>
+        <aside class="dark_light_mode">
+          <svg xmlns="http://www.w3.org/2000/svg" id="light"  width="15" height="15" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+            <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="night" width="15" height="15" fill="currentColor" class="bi bi-moon-fill opacity_0" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+          </svg>
+        </aside>
+      </div>
+      <aside class="technical">
+        <div class="h1_unreadNum">
+          <h1>Notifications</h1>
+          <div id="UnreadMasseges">3</div>
+        </div>
+        <p id="MarkRead_button">
+          Mark all as read
+        </p>
+      </aside>
+
+
+      <aside class="masseges-wraper">
+        <div class="massege_box unread_messege_box">
+          <img src="./assets/images/avatar-mark-webber.webp" class="profile_image" alt="">
+          <div class="messegeText_timing">
+            <div class="messege"><span class="UserName">Mark Webber</span> reacted to your recent post <span class="post_name"> My first tournament today!</span> <span class="unread_trriger"></span></div>
+            <p class="timing">1m ago</p>
+          </div>
+        </div>
+
+
+        <div class="massege_box unread_messege_box">
+          <img src="./assets/images/avatar-angela-gray.webp" class="profile_image" alt="">
+          <div class="messegeText_timing">
+            <div class="messege"><span class="UserName">Angela Gray</span> followed you  <span class="unread_trriger"></span></div>
+            <p class="timing">5m ago</p>
+          </div> 
+        </div>
+
+
+        <div class="massege_box unread_messege_box">
+          <img src="./assets/images/avatar-jacob-thompson.webp" class="profile_image" alt="">
+          <div class="messegeText_timing">
+            <div class="messege"><span class="UserName">Jacob Thompson</span> has joined your group <span class="club_name">Chess Club</span><span class="unread_trriger"></span></div>
+            <p class="timing">5m ago</p>
+          </div>
+        </div>
+
+        <div class="massege_box">
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" class="profile_image" alt="">
+          <div class="messegeText_timing">
+            <div class="messege"><span class="UserName">Rizky Hasanuddin</span>sent you a private message</div>
+            <p class="timing">5 days ago</p>
+            <p class="private_messege_wraper">  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game. <span class="filter"><i class="fa-solid fa-eye-slash"></i></span></p>
+          </div>
+        </div>
+
+        <div class="massege_box" style="justify-content: space-between;">
+          <div style="display: flex; gap: 10px;">
+            <img src="./assets/images/avatar-kimberly-smith.webp" class="profile_image" alt="">
+            <div class="messegeText_timing">
+              <div class="messege"><span class="UserName">Kimberly Smith</span>commented on your picture</div>
+              <p class="timing">1 week ago</p>
+            </div>
+          </div>
+          <img src="./assets/images/image-chess.webp" class="image_comment" alt="">
+        </div>
+
+
+        <div class="massege_box">
+          <img src="./assets/images/avatar-nathan-peterson.webp" class="profile_image" alt="">
+          <div class="messegeText_timing">
+            <div class="messege"><span class="UserName">Nathan Peterson</span> reacted to your recent post <span class="post_name">5 end-game strategies to increase your win rate</span></div>
+            <p class="timing">2 weeks ago</p>
+          </div>
+        </div>
+
+        <div class="massege_box">
+          <img src="./assets/images/avatar-anna-kim.webp" class="profile_image" alt="">
+          <div class="messegeText_timing">
+            <div class="messege"><span class="UserName">Anna Kim</span> left the group <span class="club_name">Chess Club</span></div>
+            <p class="timing">3 weeks ago</p>
+          </div>
+        </div>
+
+      </aside>
+    </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/sm7654">Sm7654</a>.
+  </div>
+
+  <script src="./javascript.js"></script>
+  <script src="https://kit.fontawesome.com/81535ba2d6.js" crossorigin="anonymous"></script>
+</body>
+</html>
